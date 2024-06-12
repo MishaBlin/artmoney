@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:artmoney/settings.dart';
 
 class StyledButton extends StatelessWidget {
   final String text;
@@ -13,8 +14,8 @@ class StyledButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
-          backgroundColor: (fill ? Color(0xff7880ff) : Colors.white),
-          side: const BorderSide(color: Color(0xff7880ff))),
+          backgroundColor: (fill ? Purple : Colors.white),
+          side: const BorderSide(color: Purple)),
       child: SizedBox(
           width: 60,
           height: 22,
@@ -22,7 +23,8 @@ class StyledButton extends StatelessWidget {
               child: Text(
             text,
             style: TextStyle(
-                color: (fill ? Colors.white : Color(0xff7880ff)), fontSize: 15),
+                color: (fill ? Colors.white : const Color(0xff7880ff)),
+                fontSize: 15),
           ))),
     );
   }

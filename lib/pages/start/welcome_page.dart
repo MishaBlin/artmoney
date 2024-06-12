@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:artmoney/components/styled_button.dart';
-import 'package:flutter/widgets.dart';
 
 const img_url =
     'https://s3-alpha-sig.figma.com/img/0f44/7050/bdf61b5434671c7d1534628d2e9c7b4a?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NtJwFBhyiO5SYVR4qDE9Q1iyl2-DolOdsH7zS94QtdCVOz3Hzbr2XiFfYmpPUeM4apr-XAB~FdwqIjkoqgZAAEQFLtfs7WEJJVPp6ft1BPk8cV7k5A67n8uIOkFE8VYfz3hMO1sO8QDpCFKdOaOlE7YOPU6xdqQJTNxnjhQGFexRnXJRl1qPlrAcJOrgKzFJA0uZj8E-PqI6B5B2~ZajKLZE4SGBgM9RTzbYk-1SV58mZnr-FnXBuRRbCRh78Dn8DqG3EurkTzDf3eZt93bP8zjeUrTWwaz9i6lxHsEc3rHYhb9moZVGGYf8iO~RXflI~pyNbC0YXxsmuFbmBwbYrQ__';
@@ -26,9 +25,9 @@ class _WelcomePageState extends State<WelcomePage> {
               children: [
                 // logo
                 const Image(
-                  image: NetworkImage(img_url),
-                  width: 192,
-                  height: 167,
+                  image: AssetImage('assets/logo.png'),
+                  width: 200,
+                  height: 200,
                 ),
 
                 const SizedBox(height: 40),

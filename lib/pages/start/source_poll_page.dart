@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:artmoney/components/styled_button.dart';
-import 'package:artmoney/components/text_field.dart';
-import 'package:artmoney/components/poll_checkbox.dart';
+import 'package:artmoney/components/start_pages/start_screen_nav.dart';
+import 'package:artmoney/components/start_pages/text_field.dart';
+import 'package:artmoney/components/start_pages/poll_checkbox.dart';
 
 class SourcePollPage extends StatefulWidget {
   final PageController pageController;
@@ -34,9 +34,7 @@ class _WelcomePageState extends State<SourcePollPage> {
                 const Text("Откуда вы узнали о нас",
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.black, fontSize: 22)),
-
                 const SizedBox(height: 50),
-
                 Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -59,40 +57,14 @@ class _WelcomePageState extends State<SourcePollPage> {
                         callback: refreshChecked),
                   ],
                 ),
-
                 const SizedBox(height: 30),
-
                 CustomTextField(
                     controller: anotherVariantController,
                     textHint: "Свой вариант"),
-
                 const SizedBox(
                   height: 50,
                 ),
-
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    StyledButton(
-                        text: 'Назад',
-                        onTap: () {
-                          widget.pageController.previousPage(
-                              duration: const Duration(milliseconds: 500),
-                              curve: Curves.easeIn);
-                        },
-                        fill: false),
-                    StyledButton(
-                        text: 'Далее',
-                        onTap: () {
-                          widget.pageController.nextPage(
-                              duration: const Duration(milliseconds: 500),
-                              curve: Curves.easeIn);
-                        },
-                        fill: true)
-                  ],
-                )
-                // next button
+                StartScreenNav(pageController: widget.pageController)
               ],
             ),
           ),
