@@ -62,7 +62,6 @@ class ArticleTile extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 16.0,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                   ),
                 ),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1034520640735",
+    "project_id": "artmoney-d0ac8",
+    "storage_bucket": "artmoney-d0ac8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034520640735:android:4f908b32d9c0253ed73d6a",
+        "android_client_info": {
+          "package_name": "com.example.artmoney"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJtnJvYb4I-aNt7deD_rmxNzzZ_AdevdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
